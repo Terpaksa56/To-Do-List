@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="mylist.css">
+</head>
+<body>
+    <div class="wave-container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <div class="to-do-list">
+    <h1>My To Do List</h1>
+    <br>
+    <div class="form-group">
+    <input type="text" id="activity" placeholder=" ">
+    <label for="activity" class="floating-label">Masukkan Aktivitas</label>
+    <span class="highlight"></span>
+    <br>
+    <div class="input-field">
+    <input type="time" id="time">
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+        <input type="text" id="gmail" placeholder=" ">
+        <label for="gmail" class="floating-label">Masukkan Email</label>
+        <span class="highlight"></span>
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="text" id="whatsapp" placeholder=" ">
+        <label for="whatsapp" class="floating-label">Masukkan Whattsapp</label>
+        <span class="highlight"></span>
+    </div>
+    <button onclick="addActivity()" class="button">Tambahkan Aktivitas</button>
+    <h2>Daftar Aktivitas:</h2>
+    <ul id="activity-list"></ul>
+    <button onclick="clearActivities()" class="button">Hapus Aktivitas</button>
+    <button onclick="sendActivitiesByEmail()" id="send-email-button" class="button">Kirim Aktivitas ke Email</button>
+    <button onclick="sendActivitiesToWhatsApp()" class="button">Kirim Aktivitas ke whatsapp</button>
+    </div>
+
+
+    <script src="mylist.js"></script>
+</body>
+</html>
